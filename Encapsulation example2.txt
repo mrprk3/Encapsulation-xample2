@@ -1,0 +1,53 @@
+package com.mrprk;
+
+class Student1{
+	private String name;
+	private int id;
+	private String stream;
+	private String address;
+	
+	public String getName() {
+		return name;
+	}
+	public int getId() {
+		return id;
+	}
+	public String getStream() {
+		return stream;
+	}
+	public String getAddress() {
+		return address;
+	}
+	
+	public void setName(String newName) {
+		name=newName;
+	}
+	public void setId(int newId) {
+		id=newId;
+	}
+	public void setStream(String newStream) {
+		stream=newStream;
+	}
+	public void setAddress(String newAddress) {
+		address=newAddress;
+	}
+}
+
+public class StudentEncapsulate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student1 s = new Student1();
+		s.setName("Atim Pramanik");
+		s.setId(10001);
+		s.setStream("Information Technology");
+		s.setAddress("Kolkata");
+		
+		System.out.println("Student name is:"+s.getName());
+		System.out.println("Age of the Student is:"+s.getId());
+		System.out.println("Stream is :"+s.getStream());
+		System.out.println("Student address :"+s.getAddress());
+
+	}
+
+}
